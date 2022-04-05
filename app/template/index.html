@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <style>
+        #photos-gallery {
+            height: auto;
+            width: auto;
+        }
+        
+        .photos-gallery-header {
+            border-bottom: 1px solid #e1e1e1;
+            color: #333;
+            display: flex;
+            font-size: 24px;
+            font-weight: bold;
+            justify-content: space-between;
+            line-height: 32px;
+            margin: 0 0 16px;
+            padding-bottom: 16px;
+        }
+        
+        .photos-gallery-content {
+            display: grid;
+            grid-template-columns: 35% 35% 20% 20%;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            height: auto;
+        }
+        
+        .photos-gallery-content .item {
+            box-shadow: inset 0 0 0 1px #000;
+            overflow: hidden;
+        }
+        
+        .photos-gallery-content .item-1 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1
+        }
+        
+        .photos-gallery-content .item-2 {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        
+        .photos-gallery-content .item-3 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+        
+        .photos-gallery-content .item-4 {
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        
+        .photos-gallery-content .item-5 {
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="photos-gallery-content">
+        <div class="item item-1">
+            <div class="photo">
+                <img src="http://127.0.0.1:8000/api/v1/video/stream/0" />
+            </div>
+        </div>
+        <div class="item item-2">
+            <div class="photo">
+                <img src="http://127.0.0.1:8000/api/v1/video/stream/0" />
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="photo">
+                <img src="http://127.0.0.1:8000/api/v1/video/stream/1" />
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="photo">
+                <img src="http://127.0.0.1:8000/api/v1/video/stream/1" />
+            </div>
+        </div>
+        <div class="item item-5">
+            <br> <br>
+            <form>
+                Camera ID:
+                <input type="text" name="camera_id" size="20">
+                <br> <br> Truck ID:
+                <input type="text" name="truck_id" size="15">
+            </form>
+            <button type="button">Click Me!</button>
+            <button type="button">Click Me 2!</button>
+            <button type="button">Click Me 2 2!</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
