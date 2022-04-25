@@ -1,0 +1,15 @@
+services:
+  mosquitto:
+    build:
+      context: .
+      dockerfile: Dockerfile.mosquitto
+    ports:
+      - 1883:1883
+      - 9001:9001
+  
+  application:
+    build: 
+      context: .
+      dockerfile: Dockerfile.fastapi
+    ports:
+      - 8000:8000
